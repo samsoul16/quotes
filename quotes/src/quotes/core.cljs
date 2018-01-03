@@ -52,4 +52,4 @@
 
 (defn init []
   (dispatch-sync [:initialize-db])
-  (.registerComponent app-registry "main" #(r/reactify-component quote-main)))
+  (.registerComponent app-registry "main" #(r/reactify-component app-root)))
